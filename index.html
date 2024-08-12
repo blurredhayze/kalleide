@@ -25,22 +25,22 @@
       <div id="welcome" class="section text">Welcome to another digital realm on the brink of space-time collapse and/or collision! </div>
       <div id="space-time" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/lisafrank01.png">
+			<img id="logo" src="images/lisafrank01.png" draggable="false" alt="Sugar for brains">
 		</a>
       </div>
       <div id="artifacts" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/ponychest.gif">
+			<img id="logo" src="images/ponychest.gif" draggable="false">
         </a>
       </div>
       <div id="dollhouse" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/fruitkidsdolls.png">
+			<img id="logo" src="images/fruitkidsdolls.png" draggable="false">
         </a>
       </div>
       <div id="brainworms" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/toylizards.png">
+			<img id="logo" src="images/toylizards.png" draggable="false">
         </a>
       </div>
         <footer id="footer" style="margin-top: 10px;">DYSCOTOPIA OF KALLEIDE, 2024</footer>
@@ -115,10 +115,25 @@
 		margin: 0 0 .5em 0;
 	}
 
+  #logo {
+  transform: rotate(-3deg);
+  transition: 0.4s;
+  pointer-events: auto;
+  z-index: 99;
+}
+#logo:hover {animation: gelatine 0.5s infinite;}
+
+@keyframes gelatine {
+from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
 	#tutorial {
 		font-style: italic;
 		color: #b6b6e8;
-        opacity: 60%
+        opacity: 60%;
 		font-weight: 100;
 	}
 
@@ -163,7 +178,7 @@
 	.command {
 		display: inline-block;
 	}
-    }
+    
     /* the "container" is what wraps your entire website */
     /* if you want something (like the header) to be Wider than
     the other elements, you will need to move that div outside
@@ -216,14 +231,6 @@
 		border-radius: 3px;
     	border: 1px solid transparent;
     	vertical-align: middle;
-	}
-
-	.iconWindow:hover, .iconWindow:active {
-		border-radius: 3px;
-    	border: 1px solid pink;
-   		box-shadow: 10px 5px 13px magenta;
-   		-moz-box-shadow: 10px 5px 13px magenta;
-   		-webkit-box-shadow: 10px 5px 13px magenta;
 	}
 
 	.iconFlat:hover, .iconFlat:active {
