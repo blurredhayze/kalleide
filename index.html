@@ -3,8 +3,9 @@
   <head>
     <title>KALLEIDE</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
@@ -25,22 +26,22 @@
       <div id="welcome" class="section text">Welcome to another digital realm on the brink of space-time collapse and/or collision! </div>
       <div id="space-time" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/lisafrank01.png">
+			<img id="logo" src="images/lisafrank01.png" draggable="false" alt="Sugar for brains">
 		</a>
       </div>
       <div id="artifacts" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/ponychest.gif">
+			<img id="logo" src="images/ponychest.gif" draggable="false">
         </a>
       </div>
       <div id="dollhouse" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/fruitkidsdolls.png">
+			<img id="logo" src="images/fruitkidsdolls.png" draggable="false">
         </a>
       </div>
       <div id="brainworms" class="section"> 
         <a class="icon iconWindow" rel="nofollow" target="_blank" href="https://kalleide.neocities.org/spacetime">
-			<img src="images/toylizards.png">
+			<img id="logo" src="images/toylizards.png" draggable="false">
         </a>
       </div>
         <footer id="footer" style="margin-top: 10px;">DYSCOTOPIA OF KALLEIDE, 2024</footer>
@@ -50,253 +51,4 @@
     <script type="text/javascript" src="index.js"></script>
  
   </body>
-  
-  <!-- THIS IS THE CSS !-->
-  <style>
-    /* user styles */
-
-    /* styles are what change the color and sizes of stuff on your site. */
-
-    /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-
-    :root {
-      --body-bg-image: url(images/starsagainpinker.gif);
-
-      /* colors */
-      --content: #ef8dcd;
-      --content-spacing: 10px
-    }
-
-    /* if you have the URL of a font, you can set it below */
-    /* feel free to delete this if it's not your vibe */
-
-   
-   
-   body {
-		margin: 0;
-		padding: 0;
-	    -webkit-animation: pulse 40s infinite; /*alternate;*/
-	    -moz-animation: pulse 40s infinite; /*alternate;*/
-	    font-family: 'Droid Sans Mono', monospace;
-        background-image: var(--body-bg-image);
-        color: #ffffff
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    /* below this line is CSS for the layout */
-
-
-    #commandWindow {
-      background-repeat: repeat;
-      background-image: url(images/anistars.gif);
-      color: #ffffff;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      padding: 0.8em 1em;
-      background-color: rgba(0, 0, 0, 0.2);
-      margin: 1em;
-      border-radius: 3px;
-      border: 1px solid rgba(138, 26, 232, 0.67);
-      border-top-width: 1px;
-      border-top-width: 5px;
-      box-sizing: border-box;
-      box-shadow: 10px 5px 13px #ef8dcd;
-      -moz-box-shadow: 10px 5px 13px #ef8dcd;
-      -webkit-box-shadow: 10px 5px 13px #ef8dcd;
-      max-width: 100%;
-    }
-    #commandWindow h3 {
-		margin: 0 0 .5em 0;
-	}
-
-	#tutorial {
-		font-style: italic;
-		color: #b6b6e8;
-        opacity: 60%
-		font-weight: 100;
-	}
-
-	#youTyping {
-		position: fixed;
-		top: -200px;
-	}
-
-    #login {
-      display: -webkit-inline-box;
-    }
-    #fakeCursor{
-       -moz-animation: blink 2s infinite;
-      background-color: rgba(0,0,0,0);
-      display: inline-block;
-      margin: 0 5px;
-
-    }
-	@-moz-keyframes blink {
-      0% {background-color: rgba(87,186,225,1);}
-      49% {background-color: rgb(136, 210, 64);}
-      50% {background-color: rgb(239, 141, 205);}
-      99% {background-color: rgba(145,41,141,1);}
-      100% {background-color: rgba(87,186,225,1);}
-	}
-    #youTyping{
-      resize: none;
-      width: 100%;
-      border: none;
-      background: transparent;
-      color: transparent;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
-    #youTyping:focus {
-		text-indent: -999em;
-	}
-
-	.command {
-		display: inline-block;
-	}
-    }
-    /* the "container" is what wraps your entire website */
-    /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-    #container {
-      max-width: 900px;
-      /* this is the width of your layout! */
-      /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
-      margin: 0 auto;
-      /* this centers the entire page */
-    }
-
-    #mainContent {
-		display: none;
-		width: 80%;
-		max-width: 700px;
-		margin: 0 auto;
-		text-align: center;
-		z-index: 2;
-	}
-    
-    #welcome{
-      border-block-start: dashed;
-      border-block-end: dashed;
-      color: #ef8dcd;
-      background: rgba(0,0,0,.5);
-      padding: .3em 1em .6em 1em;
-      border-radius: 2px;
-      border-top-width: medium;
-      border-right-width: medium;
-      border-bottom-width: medium;
-      border-left-width: medium;
-      border-width: 2px 2px 4px 2px;
-      text-align: center
-        
-    }
-   	.section {
-		display: inline;
-		margin: 1em 0;
-	}
-
-	.section.text {
-		display: inline-block;
-	}
-
-	.icon {
-		display: inline-block;
-		max-width: 35%;
-		border-radius: 3px;
-    	border: 1px solid transparent;
-    	vertical-align: middle;
-	}
-
-	.iconWindow:hover, .iconWindow:active {
-		border-radius: 3px;
-    	border: 1px solid pink;
-   		box-shadow: 10px 5px 13px magenta;
-   		-moz-box-shadow: 10px 5px 13px magenta;
-   		-webkit-box-shadow: 10px 5px 13px magenta;
-	}
-
-	.iconFlat:hover, .iconFlat:active {
-		background-color: #dae679;
-	}
-    
-    #spacetime{
-      
-    }
-
-	.icon img {
-		max-width: 100%;
-	}
-  
-    #footer {
-      background-color: #000000;
-      /* background color for footer */
-      width: 100%;
-      height: 40px;
-      padding: 10px;
-      text-align: right;
-      /* this centers the footer text */
-    }
-
-    h1,
-    h2,
-    h3 {
-      color: #e32ba3;
-    }
-
-    h1 {
-      font-size: 25px;
-    }
-
-    strong {
-      /* this styles bold text */
-      color: #ed64f5;
-    }
-
-    /* this is just a cool box, it's the darker colored one */
-    .box {
-      background-color: #13092d;
-      border: 1px solid #ef8dcd;
-      padding: 10px;
-    }
-
-    /* CSS for extras */
-
-    #topBar {
-      width: 100%;
-      height: 30px;
-      padding: 10px;
-      font-size: smaller;
-      background-color: #13092d;
-    }
-
-    /* BELOW THIS POINT IS MEDIA QUERY */
-
-    /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
-
-    @media only screen and (max-width: 800px) {
-      #flex {
-        flex-wrap: wrap;
-      }
-
-      aside {
-        width: 100%;
-      }
-
-  </style>
 </html>
