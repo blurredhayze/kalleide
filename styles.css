@@ -1,10 +1,5 @@
-    /* user styles */
+    
 
-    /* styles are what change the color and sizes of stuff on your site. */
-
-    /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
 
     :root {
         --body-bg-image: url(images/starsagainpinker.gif);
@@ -13,11 +8,7 @@
         --content: #ef8dcd;
         --content-spacing: 10px
       }
-  
-      /* if you have the URL of a font, you can set it below */
-      /* feel free to delete this if it's not your vibe */
-  
-     
+
      
      body {
           margin: 0;
@@ -33,7 +24,7 @@
         box-sizing: border-box;
       }
   
-      /* below this line is CSS for the layout */
+  
   
   
       #commandWindow {
@@ -41,18 +32,17 @@
         background-image: url(images/anistars.gif);
         color: #ffffff;
         position: fixed;
-        top: 0px;
-        left: 0px;
+     
         padding: 0.8em 1em;
         background-color: rgba(0, 0, 0, 0.2);
-        margin: 1em;
+        margin: 20px;
         border-radius: 3px;
         border: 1px solid rgba(138, 26, 232, 0.67);
         border-top-width: 1px;
         border-top-width: 5px;
         box-sizing: border-box;
         box-shadow: 10px 5px 13px #ef8dcd;
-        -moz-box-shadow: 10px 5px 13px #ef8dcd;
+        -moz-box-shadow: 10px 5px 10px #ef8dcd;
         -webkit-box-shadow: 10px 5px 13px #ef8dcd;
         max-width: 100%;
       }
@@ -130,9 +120,6 @@
       of the container */
       #container {
         max-width: 900px;
-        /* this is the width of your layout! */
-        /* if you change the above value, scroll to the bottom
-        and change the media query according to the comment! */
         margin: 0 auto;
         /* this centers the entire page */
       }
@@ -232,15 +219,6 @@
         background-color: #13092d;
       }
   
-      /* BELOW THIS POINT IS MEDIA QUERY */
-  
-      /* so you wanna change the width of your page? 
-      by default, the container width is 900px.
-      in order to keep things responsive, take your new height,
-      and then subtrack it by 100. use this new number as the 
-      "max-width" value below
-      */
-  
       @media only screen and (max-width: 800px) {
         #flex {
           flex-wrap: wrap;
@@ -250,3 +228,4 @@
           width: 100%;
         }
     }  
+
