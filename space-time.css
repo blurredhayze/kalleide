@@ -8,7 +8,7 @@ body {
           font-family: 'Droid Sans Mono', monospace;
           background-image:  url(images/stars3.gif);
           cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym631.ani), url(https://cur.cursors-4u.net/symbols/sym-7/sym631.png), auto !important; 
-          color: #532635;
+          color: #ffffff;
           font-size: 16px;
     }
     #header {
@@ -67,7 +67,7 @@ flex-grow: 6;
 flex-basis: 0;
 min-width: 220px;
 height: 220px;
-border: 2px solid #5D1838;
+border: 2px solid #0977BC;
 padding: 1rem;
 overflow: scroll;
 overflow-x: hidden;
@@ -83,16 +83,16 @@ font-size: 20px;
 text-align: right;
 font-weight: normal;
 font-family: 'Love Ya Like A Sister', sans-serif;
-border-bottom: 2px dotted #5D1838;
+border-bottom: 2px dotted #0977BC;
 }
  
 a{
 text-decoration: none;
-color: #903643;
+color: #0977BC;
 }
  
 a:visited{
-color: #903643;
+color: #0977BC;
 }
  
 a:hover{
@@ -116,12 +116,7 @@ background-color: transparent;
 background-color: #5D1838;
 }
  
-#credit{
-font-size: 12px;
-position: fixed;
-bottom: 0px;
-right: 0;
-}
+
  
 @media(max-width:730px){
 .box img{
