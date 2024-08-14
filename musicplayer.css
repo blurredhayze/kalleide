@@ -19,7 +19,7 @@ body {
 .music-info {background: #cce4fe; position: relative;  font-family:  Segoe UI, sans-serif; font-size: 13px;}
 marquee {margin-top: -14px;width: 100%; font-size: 14px; color:#12509d;} hr {margin: 0; margin-top: -15px; border-top-color:#B6D4F4
 ; border-bottom-color: #e5f1f5;}
-#deets {margin-top: 2px; text-align: left; width: 180px; margin-left: 60px;}
+#deets {margin-top: 2px; text-align: left; width: 180px; margin-left: 80px; height: 60px; vertical-align: bottom;}
 
 .img-container {box-sizing: border-box;width: 60px;z-index: 99;}
 
@@ -28,7 +28,7 @@ marquee {margin-top: -14px;width: 100%; font-size: 14px; color:#12509d;} hr {mar
 .img-container img {
     box-sizing: border-box;
     width: inherit;
-    height: 60px;
+    height: 100px;
     position: absolute; top: 25px; left: 5px;
     object-fit: cover;
     border: 1px solid #919ca8; border-bottom-color:#adbcce; border-radius: 3px;

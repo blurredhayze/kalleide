@@ -10,50 +10,17 @@
     </head>
     <body>
         <div class="music-info">
+            <div class="img-container">
+                <img src="https://sugarforbrains.neocities.org/frame/10_ds.png" alt="Album cover" id="cover">
+            </div>
+            <hr>
             <marquee><p id="np">
             Now Playing: <span id="title">Supersonic</span>
             </p></marquee>
-            <hr>
-            <div class="img-container">
-            <img src="https://sugarforbrains.neocities.org/frame/10_ds.png" alt="Album cover" id="cover">
-            </div>
-            <div id="deets">
-            <p style="display: inline;">Artist: </p><p id="artist" style="display: inline;">Bad Religion</p><br>
-            <p style="display: inline;">Album: </p><p id="album" style="display: inline;">The Process Of Belief</p><br>
-            </div>      
         </div>
         <div class="music-container"><div class="playlist">
-            <br>
-            <ul class="tracklist">
-                <li data-index="0" onclick="setTrack(0)" class=" activeSong"><span class="trackInfo"><span class="trackTitle">Supersonic</span> - <span class="trackArtist">Bad Religion</span></span><span class="trackDuration">01:47</span></li>
-                <li data-index="1" onclick="setTrack(1)" class=""><span class="trackInfo"><span class="trackTitle">Bottom Line</span> - <span class="trackArtist">Lemon Demon</span></span><span class="trackDuration">04:43</span></li>
-                <li data-index="2" onclick="setTrack(2)" class=""><span class="trackInfo"><span class="trackTitle">HAPPY☆ANGEL</span> - <span class="trackArtist">jun with TAHIRIH</span></span><span class="trackDuration">01:55</span></li>
-                <li data-index="3" onclick="setTrack(3)" class=""><span class="trackInfo"><span class="trackTitle">Drown</span> - <span class="trackArtist">F-777</span></span><span class="trackDuration">02:41</span></li>
-                <li data-index="4" onclick="setTrack(4)" class=""><span class="trackInfo"><span class="trackTitle">barbarian</span> - <span class="trackArtist">B.A.A.D.D.D</span></span><span class="trackDuration">02:23</span></li>
-                <li data-index="5" onclick="setTrack(5)" class=""><span class="trackInfo"><span class="trackTitle">Crutch</span> - <span class="trackArtist">Rabbit Junk</span></span><span class="trackDuration">03:58</span></li>
-                <li data-index="6" onclick="setTrack(6)" class=""><span class="trackInfo"><span class="trackTitle">Rainbow In The Sky</span> - <span class="trackArtist">DJ Paul Elstak</span></span><span class="trackDuration">03:39</span></li>
-                <li data-index="7" onclick="setTrack(7)" class=""><span class="trackInfo"><span class="trackTitle">Ringe Dinge Ding</span> - <span class="trackArtist">DJ Splash</span></span><span class="trackDuration">03:03</span></li>                           
-            </ul>
             <audio src="https://files.catbox.moe/yheyac.mp3" id="audio"></audio>
             </div></div>
-
-            <div class="navigation">
-            <div class="progress-container">
-                            <div class="progress"></div>      
-                        </div>
-            <div class="navi">
-                <p style="font-size: 13px; display: inline;">00:00</p>
-                        <button id="prev" class="action-btn">
-                        <img src="https://sugarforbrains.neocities.org/frame/prev.png">
-                        </button>
-                        <button id="play" class="action-btn action-btn-big">
-                        <img src="https://sugarforbrains.neocities.org/frame/play.png">
-                        </button>
-                        <button id="next" class="action-btn">
-                        <img src="https://sugarforbrains.neocities.org/frame/next.png">
-                        </button>
-                <p style="font-size: 13px; display: inline;" id="duration">01:47</p>
-                    </div>
         </div>
         <script src="musicplayer.js"></script>
 </body></html>

@@ -24,9 +24,25 @@
         box-sizing: border-box;
       }
   
-      #music {position: fixed; top: 100px; right: 15%; width: 288px; height: 320px;}
-      #music .window-body {height: 280px;} #musicp {border: none; width: 100%; height: 280px;}
-  
+      #musicPlayer {position: fixed; top: 100px; right: 0cqb}
+      #cover {  position: absolute;
+        top: 108px;
+        left: 230px;
+        width: 113px;
+        overflow: hidden;
+        transform: perspective(500px) rotateX(10deg) scaleY(1.2) skewX(-10deg) rotateZ(5deg);
+        transform-origin: top center;
+        z-index: 10;
+      }
+      #music .window-body {height: 300px;} #musicp {border: none; width: 100%; height: 300px;}
+      #iDog {position: relative;height: 540px;z-index: 20;}
+      #playButton {position: absolute;
+        left: 189px;
+        top: 266px;
+        z-index: 30;
+        transform: rotateZ(8deg);
+        width: 121px;
+        height: 30px;}
   
       #commandWindow {
         background-repeat: repeat;
@@ -95,6 +111,7 @@
         99% {background-color: rgba(145,41,141,1);}
         100% {background-color: rgba(87,186,225,1);}
       }
+      
       #youTyping{
         resize: none;
         width: 100%;
@@ -168,10 +185,6 @@
   
       .iconFlat:hover, .iconFlat:active {
           background-color: #dae679;
-      }
-      
-      #spacetime{
-        
       }
   
       .icon img {
