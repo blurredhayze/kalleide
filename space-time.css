@@ -1,10 +1,144 @@
       /* space-time */
  
-    body {
-          margin: 0;
+
+body {
+          margin: 0 auto;
+          text-align: center;
           padding: 0;
           font-family: 'Droid Sans Mono', monospace;
-          background-image:  url(images/anistars.gif);
-          color: #ffffff
-      }
-  
+          background-image:  url(images/stars3.gif);
+          cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym631.ani), url(https://cur.cursors-4u.net/symbols/sym-7/sym631.png), auto !important; 
+          color: #532635;
+          font-size: 16px;
+    }
+    #header {
+      height: 200px;
+    margin: 0 auto;
+}
+
+ 
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+ 
+.container{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+max-width: 800px;
+margin: 0 auto;
+}
+ 
+.imgwrapper{
+display: flex;
+flex-grow: 1;
+flex-basis: 0;
+}
+ 
+.img{
+align-self: center;
+width: 100%;
+min-width: 200px;
+}
+ 
+.main{
+display: flex;
+flex-direction: column;
+flex-grow: 3;
+flex-basis: 0;
+justify-content: space-between;
+gap: 1rem;
+}
+ 
+.box{
+display: flex;
+gap: 1rem;
+}
+ 
+.boximg{
+align-self: center;
+width: 200px;
+}
+ 
+.content{
+flex-grow: 6;
+flex-basis: 0;
+min-width: 220px;
+height: 220px;
+border: 2px solid #5D1838;
+padding: 1rem;
+overflow: scroll;
+overflow-x: hidden;
+text-align: justify;
+line-height: 1.1;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+ 
+.headers{
+font-size: 20px;
+text-align: right;
+font-weight: normal;
+font-family: 'Love Ya Like A Sister', sans-serif;
+border-bottom: 2px dotted #5D1838;
+}
+ 
+a{
+text-decoration: none;
+color: #903643;
+}
+ 
+a:visited{
+color: #903643;
+}
+ 
+a:hover{
+font-style: italic;
+}
+ 
+a:active{
+font-style: italic;
+font-weight: bold;
+}
+ 
+::-webkit-scrollbar{
+width: 6px; 
+}
+ 
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+ 
+::-webkit-scrollbar-thumb{
+background-color: #5D1838;
+}
+ 
+#credit{
+font-size: 12px;
+position: fixed;
+bottom: 0px;
+right: 0;
+}
+ 
+@media(max-width:730px){
+.box img{
+display: none;
+}
+}
+ 
+@media(max-width:515px){
+.container{
+flex-direction: column;
+}
+.img{
+width: 40%;
+min-width: 40%;
+margin: 0 auto;
+}
+}
+ 
+
+ 

@@ -17,11 +17,8 @@
           -moz-animation: pulse 40s infinite; /*alternate;*/
           font-family: 'Droid Sans Mono', monospace;
           background-image: var(--body-bg-image);
-          color: #ffffff
-      }
-  
-      * {
-        box-sizing: border-box;
+          color: #ffffff;
+          cursor: url(https://cur.cursors-4u.net/cursors/cur-10/cur919.ani), url(https://cur.cursors-4u.net/cursors/cur-10/cur919.gif), auto !important;
       }
   
       #musicPlayer {position: fixed; top: 100px; right: 0cqb}
@@ -39,10 +36,12 @@
       #playButton {position: absolute;
         left: 189px;
         top: 266px;
+        opacity: 0%;
         z-index: 30;
         transform: rotateZ(8deg);
         width: 121px;
-        height: 30px;}
+        height: 30px;
+      }
   
       #commandWindow {
         background-repeat: repeat;
