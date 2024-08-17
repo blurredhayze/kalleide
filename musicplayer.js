@@ -121,20 +121,20 @@ var songlist = {
         "cover_art_url": "https://files.catbox.moe/l4qr1l.jpeg"
     },
     {
-        "name": "Ringe Dinge Ding",
-        "artist": "DJ Splash",
-        "album": "Ringe Dinge Ding",
-        "duration": "03:03",
-        "url": "https://files.catbox.moe/w4g3ny.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/7_ds.png"
+        "name": "kmart amen break",
+        "artist": "They Are Gutting A Body of Water",
+        "album": "S",
+        "duration": "02:40",
+        "url": "https://files.catbox.moe/xctvaf.mp3",
+        "cover_art_url": "https://files.catbox.moe/iqf3dd.jpg"
     },
     {
-        "name": "Dance Commander",
-        "artist": "Electric Six",
-        "album": "Fire",
-        "duration": "02:37",
-        "url": "https://files.catbox.moe/4txaym.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/8_ds.png"
+        "name": "Twin Flames",
+        "artist": "Midrift",
+        "album": "Midrift",
+        "duration": "01:44",
+        "url": "https://files.catbox.moe/wmc50u.mp3",
+        "cover_art_url": "https://files.catbox.moe/u8k5l0.jpg"
     }
     ]
   };
