@@ -33,7 +33,8 @@
       }
       #music .window-body {height: 300px;} #musicp {border: none; width: 100%; height: 300px;}
       #iDog {position: relative;height: 540px;z-index: 20;}
-      #playButton {position: absolute;
+      #playButton {
+        position: absolute;
         left: 189px;
         top: 266px;
         opacity: 0%;
@@ -41,6 +42,24 @@
         transform: rotateZ(8deg);
         width: 121px;
         height: 30px;
+      }
+      #nextButton {
+        position: absolute;
+        height: 67px;
+        width: 43px;
+        left: 316px;
+        top: 200px;
+        z-index: 30;
+        opacity: 0%;
+      }
+      #prevButton {
+        position: absolute;
+        height: 67px;
+        width: 34px;
+        left: 177px;
+        top: 179px;
+        z-index: 30;
+        opacity: 0%;
       }
   
       #commandWindow {
