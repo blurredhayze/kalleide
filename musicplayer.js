@@ -3,6 +3,7 @@ const musicContainer = document.querySelector('.music-container');
 const playBtn = document.querySelector('#playButton');
 const prevBtn = document.querySelector('#prevButton');
 const nextBtn = document.querySelector('#nextButton');
+const title = document.querySelector('#title');
 
 playBtn.addEventListener('click', () => {
     const isPlaying = musicContainer.classList.contains('play')
@@ -15,6 +16,7 @@ playBtn.addEventListener('click', () => {
 })
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
+audio.addEventListener('ended', nextSong);
 
 function playSong() {
     musicContainer.classList.add('play')
@@ -53,6 +55,7 @@ function nextSong() {
 }
 
 function loadSong(songIndex) {    
+    title.innerText = songlist.songs[songIndex].name;
     audio.src = songlist.songs[songIndex].url;
     cover.src = songlist.songs[songIndex].cover_art_url;
     audio.volume = 0.5;
