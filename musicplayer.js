@@ -62,60 +62,60 @@ function loadSong(songIndex) {
 var songlist = {
     "songs": [
     {
-        "name": "Supersonic",
-        "artist": "Bad Religion",
-        "album": "The Process Of Belief",
-        "duration": "01:47",
-        "url": "https://files.catbox.moe/yheyac.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/10_ds.png"
+        "name": "The Zenith",
+        "artist": "Starflyer 59",
+        "album": "Starflyer 59",
+        "duration": "05:36",
+        "url": "https://files.catbox.moe/2zdk3p.mp3",
+        "cover_art_url": "https://files.catbox.moe/xlsgds.png"
     },
     {
-        "name": "Bottom Line",
-        "artist": "Lemon Demon",
-        "album": "Damn Skippy",
-        "duration": "04:43",
-        "url": "https://files.catbox.moe/3eokoy.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/1_ds.png"
-    },
-    {
-        "name": "HAPPY☆ANGEL",
-        "artist": "jun with TAHIRIH",
-        "album": "Unreleased",
-        "duration": "01:55",
-        "url": "https://files.catbox.moe/gbosvb.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/2_ds.png"
-    },
-    {
-        "name": "Drown",
-        "artist": "F-777",
-        "album": "Unreleased",
-        "duration": "02:41",
-        "url": "https://files.catbox.moe/yq93qt.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/3_ds.png"
-    },
-    {
-        "name": "barbarian",
-        "artist": "B.A.A.D.D.D",
-        "album": "demo",
+        "name": "renaissance fair",
+        "artist": "Saturnalias",
+        "album": "Bugfest",
         "duration": "02:23",
-        "url": "https://files.catbox.moe/8vniix.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/4_ds.png"
+        "url": "https://files.catbox.moe/5986a3.mp3",
+        "cover_art_url": "https://files.catbox.moe/pi0xe3.jpg"
     },
     {
-        "name": "Crutch",
-        "artist": "Rabbit Junk",
-        "album": "Reframe",
-        "duration": "03:58",
-        "url": "https://files.catbox.moe/8ah79b.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/5_ds.png"
+        "name": "My Blue Heaven",
+        "artist": "Glixen",
+        "album": "She Only Said",
+        "duration": "05:43",
+        "url": "https://files.catbox.moe/1rveiq.mp3",
+        "cover_art_url": "https://files.catbox.moe/k4gdur.jpg"
     },
     {
-        "name": "Rainbow In The Sky",
-        "artist": "DJ Paul Elstak",
-        "album": "Rainbow In The Sky",
-        "duration": "03:39",
-        "url": "https://files.catbox.moe/u6062x.mp3",
-        "cover_art_url": "https://sugarforbrains.neocities.org/frame/6_ds.png"
+        "name": "Loveley Sewer",
+        "artist": "Yves Tumor",
+        "album": "Praise A Lord Who Chews But Which Does Not Consume",
+        "duration": "03:15",
+        "url": "https://files.catbox.moe/j450j1.mp3",
+        "cover_art_url": "https://files.catbox.moe/35nfjj.jpeg"
+    },
+    {
+        "name": "Lucky",
+        "artist": "VARG2TM, Eartheater, Earth",
+        "album": "Lucky",
+        "duration": "03:23",
+        "url": "https://files.catbox.moe/vrn9tp.mp3",
+        "cover_art_url": "https://files.catbox.moe/lwu943.jpeg"
+    },
+    {
+        "name": "Freak",
+        "artist": "feeble little horse",
+        "album": "Girl with Fish",
+        "duration": "01:48",
+        "url": "https://files.catbox.moe/ihmnjs.mp3 ",
+        "cover_art_url": "https://files.catbox.moe/tds39j.jpg"
+    },
+    {
+        "name": "Blue",
+        "artist": "Bluegill",
+        "album": "EP",
+        "duration": "04:15",
+        "url": "https://files.catbox.moe/cg441s.mp3",
+        "cover_art_url": "https://files.catbox.moe/l4qr1l.jpeg"
     },
     {
         "name": "Ringe Dinge Ding",
