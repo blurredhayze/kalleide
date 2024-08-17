@@ -4,6 +4,7 @@ const playBtn = document.querySelector('#playButton');
 const prevBtn = document.querySelector('#prevButton');
 const nextBtn = document.querySelector('#nextButton');
 const title = document.querySelector('#title');
+const cover = document.querySelector('#coverimg');
 
 playBtn.addEventListener('click', () => {
     const isPlaying = musicContainer.classList.contains('play')
