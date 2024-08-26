@@ -30,7 +30,7 @@ body{
   height:100%;
   transform-origin:center;
   transform-style:preserve-3d;
-  transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  transform:rotateY(calc(var(--i) * 30deg)) translateZ(570px);/* 30deg & 570px for 12 images */
 }
 
 .gallery span img{
@@ -38,6 +38,7 @@ body{
   width:100%;
   height:100%;
   object-fit:cover;
+  box-shadow: 0 0 0 3px white, 0 5px 8px 3px rgba(0,0,0, 0.6);
 }
 
 body {
@@ -63,16 +64,9 @@ body {
         transform:scale(1);
         transition:transform 0.1s ease-in-out;
         filter:grayscale(50%);
-        min-width:100%;
         min-height:100%;
         max-width:100%;
         max-height:100%;
-      }
-      &:hover {
-        img {
-          transform:scale(1.1);
-          filter:grayscale(0%);
-        }
       }
     }
   }
@@ -122,20 +116,20 @@ body {
       .content {
         transform:scale(0.9);
         opacity:0;
-        flex:1 1 auto;
         align-self: center;
-        max-height:100%;
-        min-height:0;
-        max-width:calc(100% - 200px);
-        min-width:0;
-        border-radius:5px;
-        overflow:hidden;
-        box-shadow:0 0 0 3px white, 0 5px 8px 3px rgba(0,0,0, 0.6);
-        transition:transform 0.25s ease-in-out,opacity 0.25s ease-in-out;
+        display: flex; /* Use Flexbox to center the image */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        max-height: 100%;
+        max-width: calc(100% - 200px);
+        min-height: 0;
+        min-width: 0;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 0 3px white, 0 5px 8px 3px rgba(0, 0, 0, 0.6);
+        transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
         img {
-          min-width:100%;
           min-height:100%;
-          max-width:100%;
           max-height:calc(100vh - 40px);
           display:block;
           margin:0;
