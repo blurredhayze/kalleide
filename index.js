@@ -26,13 +26,15 @@ function LogIn(name) {
 	AddLineBreak();
 
 	var response = document.createElement("h3");
-	response.innerHTML = "Welcome, " + name + ".";
+	response.innerHTML = "Welcome" + name + ".";
 	commandWindow.appendChild(response);
 	NewCommand();
 
 	$("#mainContent").fadeIn("slow");
 	$("#logo").addClass("accessed");
-	fillInGlossary();
+
+	// Set the URL hash to #mainContent
+    window.location.hash = "#mainContent";
 
 	pastIntro = true;
 
@@ -41,6 +43,11 @@ function LogIn(name) {
 			ResetPage();
 		});
 	}
+
+	// Wait for 2 seconds, then fade out the commandWindow
+    setTimeout(function() {
+        $(commandWindow).fadeOut("slow");
+    }, 2000);  // 2000 milliseconds = 2 seconds
 
 }
 
@@ -59,43 +66,10 @@ function NewCommand() {
 function EnterCommand() {
 
 	if (!pastIntro) {
-		LogIn(youTyping.value);
+		LogIn(", " + youTyping.value);
 	} else {
 		NewCommand();
 	}
-}
-
-function showSubcontent($this) {
-	$this.next().fadeIn();
-	showingDialog = true;
-}
-
-function hideDialogs() {
-	if (showingDialog) {
-		$(".subcontent").fadeOut();
-		showingDialog = false;
-	}
-
-	if (showingEmail) {
-		hideEmail();
-	}
-}
-
-showingEmail = false;
-function showEmail() {
-	if (!showingEmail) {
-		$("#emailIcon").hide();
-		$("#secretEmail").show();
-		showingEmail = true;
-	} else {
-		hideEmail();
-	}
-}
-
-function hideEmail() {
-	$("#emailIcon").show();
-	$("#secretEmail").hide();
-	showingEmail = false;
 }
 
 function mobileEvents() {
@@ -124,39 +98,22 @@ function desktopEvents() {
 	});
 }
 
-function ResetPage() {
-	if (pastIntro && (showingEmail || showingDialog)) {
-		hideDialogs();
-	} else if (!isMobile) {
-    	MirrorType();
-	}
-}
-
 $(document).ready(function() {
 	fakeCursor = document.getElementById("fakeCursor");
 	commandWindow = document.getElementById("commandWindow");
 	typed = document.getElementById("typed");
 	tutorial = document.getElementById("tutorial");
 
-	$("body").css("min-height", $(document).height());
+	if (window.location.hash === "#mainContent") {
+		LogIn(" back");
+	}
 	
-	$("body").click(function() {
-		ResetPage();
-	});
+
+	$("body").css("min-height", $(document).height());
 
 	$("#reveal_tour").click(function(e) {
 		e.stopPropagation(); 
 		showSubcontent($(this)); 
-	});
-
-	$("#reveal_manifesto").click(function(e) {
-		e.stopPropagation(); 
-		showSubcontent($(this)); 
-	});
-
-	$("#reveal_email").click(function(e) { 
-		e.stopPropagation();
-		showEmail($(this)); 
 	});
 
 	$(".subcontent").click(function(e) {
