@@ -4,10 +4,13 @@
     <title>Artifacts</title>
         <link rel="stylesheet" href="artifacts.css">
         <link rel="stylesheet" href="https://kit.fontawesome.com/0786c5feec.css" crossorigin="anonymous">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
     <body>
+        <div class="home">
+            <a href="https://kalleide.neocities.org" title="Home"><i class="fa fa-home fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
         <div class="thumbs">
             <div class="gallery">
                 <span style="--i:1">
@@ -51,13 +54,11 @@
           
           <div class="lightbox">
             <div class="target" id="target1">
-              <span>
-                <!-- spacer to keep content centered in the flex container -->
-              </span>
-              <div class="content">
-                <img src='images\gallery\8inamber.jpg' alt=''>
-              </div>
-              <a href="#target2" class="fas fa-chevron-right nav" title="next"></a>
+                <a href="#target12" class="fas fa-chevron-left nav" title="previous"></a>
+                <div class="content">
+                    <img src='images\gallery\8inamber.jpg' alt=''>
+                </div>
+                <a href="#target2" class="fas fa-chevron-right nav" title="next"></a>
             </div>
             <div class="target" id="target2">
               <a href="#target1" class="fas fa-chevron-left nav" title="previous"></a>
@@ -112,9 +113,7 @@
             <div class="target" id="target12">
                 <a href="#target11" class="fas fa-chevron-left nav" title="previous"></a>
                 <div class="content"><img src='images\gallery\Magical Garden.jpg' alt=''></div>
-              <span>
-                <!-- spacer to keep content centered in the flex container -->
-              </span>
+                <a href="#target1" class="fas fa-chevron-left nav" title="next"></a>
             </div>
             <a href="#!" class="fas fa-times close nav"></a>
           </div>
