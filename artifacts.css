@@ -155,6 +155,10 @@ body {
   position:absolute;
   left:15px;
   top:15px;
-  align-items:left;
-  justify-content:left;
+}
+
+.mute {
+  position:absolute;
+  left:15px;
+  bottom:15px;
 }
