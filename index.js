@@ -12,7 +12,7 @@ function MirrorType(entry) {
 	youTyping.focus();
 	youTyping.focus();
 
-	if (!pastIntro && typed.innerHTML.length > 0) {
+	if (!(window.location.hash === "#mainContent") && typed.innerHTML.length > 0) {
 		tutorial.style.display = "none";
 	}
 }

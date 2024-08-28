@@ -97,7 +97,7 @@ marquee {
   box-shadow: 10px 5px 13px #ef8dcd;
   -moz-box-shadow: 10px 5px 10px #ef8dcd;
   -webkit-box-shadow: 10px 5px 13px #ef8dcd;
-  max-width: 100%;
+  max-width: 30%;
 }
 #commandWindow h3 {
     margin: 0 0 .5em 0;

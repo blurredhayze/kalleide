@@ -1,5 +1,6 @@
 var audio = document.getElementById('background-audio');
 var muteButton = document.getElementById('mute-button');
+audio.volume = 0.2;
 function toggleMute() {
     if (audio.muted) {
         audio.muted = false;
