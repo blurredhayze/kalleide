@@ -43,12 +43,6 @@ function LogIn(name) {
 			ResetPage();
 		});
 	}
-
-	// Wait for 2 seconds, then fade out the commandWindow
-    setTimeout(function() {
-        $(commandWindow).fadeOut("slow");
-    }, 2000);  // 2000 milliseconds = 2 seconds
-
 }
 
 function NewCommand() {
