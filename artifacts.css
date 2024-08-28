@@ -3,7 +3,7 @@ body{
   height:100vh;
   display:grid;
   place-items:center;
-  background-color:#010101;
+  background-image: url(images/skylo.gif);
 }
 
 .gallery{
