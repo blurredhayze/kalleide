@@ -8,11 +8,11 @@
 
 @keyframes rotate{
   from{
-    transform:perspective(1200px) rotateY(0deg);
+    transform:perspective(2100px) rotateY(0deg);
   }
   
   to{
-    transform:perspective(1200px) rotateY(360deg);
+    transform:perspective(2100px) rotateY(360deg);
   }
 }
 
