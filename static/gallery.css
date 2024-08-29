@@ -10,10 +10,20 @@ body{
     position:absolute;
     left:15px;
     top:15px;
+    a {
+      i {
+        color:black;
+        cursor: pointer;
+      }
+    }
   }
   
-  .mute {
-    position:absolute;
-    left:15px;
-    bottom:15px;
+.mute {
+  position:absolute;
+  left:15px;
+  bottom:15px;
+  i {
+    color:black;
+    cursor: pointer;
   }
+}
