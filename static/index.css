@@ -6,6 +6,9 @@
   --content-spacing: 10px
 }
 
+a:link {
+  color: hotpink
+}
 
 body {
   margin: 0;
@@ -225,14 +228,14 @@ of the container */
 
 #footer {
   background-color: #000000;
-  /* background color for footer */
   width: 100%;
   height: 40px;
   padding: 10px;
   font-size: 10px;
   text-align: right;
-  /* this centers the footer text */
+  
 }
+
 
 h1,
 h2,
