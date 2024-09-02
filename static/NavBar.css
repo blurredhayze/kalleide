@@ -15,10 +15,15 @@
 .slidemenu{
   font-family: arial, sans-serif;
   max-width: 1600px;
-  margin: 10px auto;
+  position: fixed;
+  top: 20px; /* Adjust this value to position the menu at the desired height */
+  left: 50%;
+  transform: translateX(-50%);
   overflow: hidden;
   text-align: center;
+  z-index: 1000; /* Ensure it stays above other content */
 }
+
 
 .slidemenu label{
   width: 16%;
