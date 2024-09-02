@@ -7,13 +7,15 @@
 }
 
 a:link {
-  color: hotpink
+  color: #e32ba3;
+  text-decoration: none;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Droid Sans Mono', monospace;
+  
   background-image: var(--body-bg-image);
   color: #ffffff;
   cursor: url(https://cur.cursors-4u.net/cursors/cur-10/cur919.ani), url(https://cur.cursors-4u.net/cursors/cur-10/cur919.gif), auto !important;
@@ -167,10 +169,7 @@ from, to { transform: scale(1, 1); }
     display: inline-block;
 }
 
-/* the "container" is what wraps your entire website */
-/* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
+
 #container {
   max-width: 900px;
   margin: 0 auto;
@@ -189,7 +188,7 @@ of the container */
 #welcome{
   border-block-start: dashed;
   border-block-end: dashed;
-  color: #ef8dcd;
+  color: hotpink;
   background: rgba(0,0,0,.5);
   padding: .3em 1em .6em 1em;
   border-radius: 2px;
@@ -226,6 +225,11 @@ of the container */
     max-width: 100%;
 }
 
+#stamps{
+  color: hotpink;
+  
+}
+
 #footer {
   background-color: #000000;
   width: 100%;
@@ -252,12 +256,6 @@ strong {
   color: #ed64f5;
 }
 
-/* this is just a cool box, it's the darker colored one */
-.box {
-  background-color: #13092d;
-  border: 1px solid #ef8dcd;
-  padding: 10px;
-}
 
 /* CSS for extras */
 
