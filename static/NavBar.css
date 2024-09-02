@@ -7,6 +7,9 @@
   clear: both;
 }
 
+.title {
+  font-size: 40px;
+}
 
 .slide-toggle{
   display: none;
@@ -16,7 +19,7 @@
   font-family: arial, sans-serif;
   max-width: 1600px;
   position: fixed;
-  top: 20px; /* Adjust this value to position the menu at the desired height */
+  top: 100px; /* Adjust this value to position the menu at the desired height */
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
