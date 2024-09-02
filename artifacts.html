@@ -10,42 +10,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-        <div class="top-right-slide">
-            <div class="inner-container-top">
-                <a href="https://kalleide.neocities.org/artifacts" class="nav-links">Illustration</a>
-            </div>
-        </div>
-        <div class="middle-right-slide">
-            <div class="inner-container-middle">
-                <a href="https://kalleide.neocities.org/exhibitions" class="nav-links">Exhibitions</a>
-            </div>
-        </div>
-        <div class="bottom-right-slide">
-            <div class="inner-container-bottom">
-                <a href="https://kalleide.neocities.org/CV/Resume" class="nav-links">CV/Resume</a>
-            </div>
-        </div>
-        
-        <div class="top-left-slide">
-            <div class="inner-container-left-top">
-            <a href="https://kalleide.neocities.org/Textiles" class="nav-links">Textiles</a>
-            </div>
-        </div>
-        <div class="bottom-left-slide">
-            <div class="inner-container-left-bottom">
-                <a href="https://kalleide.neocities.org/Misc" class="nav-links">Misc</a>
-            </div>
-        </div>
+        <nav class="slidemenu">
+  
+            <!-- Item 1 -->
+            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
+            <label for="slide-item-1" style="opacity: 1;"><img class="icon" src="images/70stemptattoostar.png"><span >Illustration</span></label>
             
-        <div class="menu-btn">
-            <div class="eks-one"></div>
-            <div class="eks-two"></div>
-            <div class="eks-three"></div>
-        </div>
-        <div class="home">
-            <a href="https://kalleide.neocities.org" title="Home"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
-        </div>
-          
+            <!-- Item 2 -->
+            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+            <label for="slide-item-2"><img class="icon" src="images/70stemptattoostar.png"><span>Textiles</span></label>
+            
+            <!-- Item 3 -->
+            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+            <label for="slide-item-3"><img class="icon" src="images/70stemptattoostar.png"><span>Exhibitions</span></label>
+            
+            <!-- Item 4 -->
+            <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+            <label for="slide-item-4"><img class="icon" src="images/70stemptattoostar.png"><span>Resume</span></label>
+            
+            <!-- Item 5 -->
+            <input type="radio" name="slideItem" id="slide-item-5" class="slide-toggle"/>
+            <label for="slide-item-5"><img class="icon" src="images/70stemptattoostar.png"><span>Misc</span></label>
+            <div class="home">
+                <a href="https://kalleide.neocities.org#mainContent" title="Home"><i class="fa fa-home fa-2x" aria-hidden="true" style="cursor: pointer;color: gray;"></i></a>
+            </div>
+          </nav>
         <script type="text/javascript" src="NavBar.js"></script>
     </head>
     <body>

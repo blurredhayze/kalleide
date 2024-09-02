@@ -2,22 +2,9 @@ body{
     margin:0;
     height:100vh;
     display:grid;
-    place-items:center;
     background-image: url(../images/skylo.gif);
   }
-  
-.home {
-    position:absolute;
-    left:15px;
-    top:15px;
-    a {
-      i {
-        color:black;
-        cursor: pointer;
-      }
-    }
-  }
-  
+    
 .mute {
   position:absolute;
   left:15px;
