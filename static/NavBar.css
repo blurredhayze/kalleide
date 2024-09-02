@@ -1,14 +1,26 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 .clear{
   clear: both;
 }
 
+body {
+  margin: 0;
+  height: 100%; /* Ensure the body takes the full height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
 .title {
+  position: fixed;
   font-size: 40px;
+  top: -50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title p {
+  text-align: center;
 }
 
 .slide-toggle{
@@ -24,7 +36,6 @@
   transform: translateX(-50%);
   overflow: hidden;
   text-align: center;
-  z-index: 1000; /* Ensure it stays above other content */
 }
 
 
