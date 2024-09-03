@@ -1,5 +1,6 @@
+
 .photos {
-  margin-top: 200px;
+  margin-top: 300px;
   margin-left: -500px;
 }
 
@@ -11,8 +12,8 @@
   }
   
   .photos img {
-    height: 200px;
-    width: 140px;
+    height: 300px;
+    width: 210px;
     position: absolute;
     offset-path: path('m 0 50 q 100-30 200-30 t 200 30 200 0 200-30 200 30');
     box-shadow: 1px 1px 3px #0008;
@@ -43,13 +44,13 @@
   
   /* 4 images */
   .photos img:nth-last-child(4):first-child {
-    offset-distance: 10%;
+    offset-distance: 06%;
   }
   .photos img:nth-last-child(3):nth-child(2) {
     offset-distance: 35%;
   }
   .photos img:nth-last-child(2):nth-child(3) {
-    offset-distance: 65%;
+    offset-distance: 64%;
   }
   .photos img:last-child:nth-child(4) {
     offset-distance: 90%;
