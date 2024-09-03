@@ -33,19 +33,31 @@
   box-shadow: 0 0 0 5px white, 0 5px 8px 3px rgba(0,0,0, 0.6);
 }
 
-body {
-    display:flex;
-    align-items:center;
+body{
+  margin:0;
+  height:100vh;
+  display:grid;
+  background-image: url(../images/skylo.gif);
     justify-content:center;
-  }
+}
+  
+.mute {
+position:absolute;
+left:15px;
+bottom:15px;
+i {
+  color:black;
+  cursor: pointer;
+}
+}
 
-  .thumbs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 500px;
-    max-width: 100%;
-  }
+.thumbs {
+  margin: 100px auto; /* Center horizontally */
+  width: 500px;
+  max-width: 100%;
+  margin-top: 300px;
+}
+
   
   .thumbs > a {
     max-width: 150px;
