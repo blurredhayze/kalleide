@@ -35,10 +35,13 @@
 
 body{
   margin:0;
-  height:100vh;
-  display:grid;
+  height:100%;
   background-image: url(../images/skylo.gif);
-    justify-content:center;
+  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+    
 }
   
 .mute {
@@ -53,9 +56,6 @@ i {
 
 .thumbs {
   margin: 100px auto; /* Center horizontally */
-  width: 500px;
-  max-width: 100%;
-  margin-top: 300px;
 }
 
   

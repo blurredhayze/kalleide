@@ -1,5 +1,13 @@
+body {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center content horizontally */
+	justify-content: flex-start; /* Align content to the top of the body */
+	text-align: center;
+  }
 .about {
-  margin-top: 200px;
   text-align: center;
   max-width: 60%;
 }
