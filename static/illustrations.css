@@ -129,7 +129,7 @@ bottom:15px;
       justify-content: center; /* Center horizontally */
       align-items: center; /* Center vertically */
       max-height: 100%;
-      max-width: 100%;
+      max-width: 60%;
       min-height: 0;
       min-width: 0;
       overflow: hidden;
@@ -147,6 +147,20 @@ bottom:15px;
       .content {
         transform:scale(1);
         opacity:1;
+      }
+    }
+    .description {
+      text-align: center;
+      p {
+        color: white;
+        width: 25vw; /* 25% of the viewport width */
+        word-wrap: break-word; /* Ensure long words also break onto the next line */
+        
+      }
+      h2 {
+        color: white;
+        margin: 0px;
+        font-size: 48px;
       }
     }
   }
