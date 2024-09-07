@@ -28,3 +28,96 @@ body {
 	box-shadow: 3px 4px 10px #0006;
 	z-index: 999;
 }
+
+.lightbox {
+	position:fixed;
+	background:rgba(0,0,0,0.5);
+	backdrop-filter:blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	transform:translateY(-100%);
+	opacity:0;
+	transition:opacity 0.5s ease-in-out;
+	&:has(div:target) {
+	  transform:translateY(0%);
+	  opacity:1;
+	}
+	a.nav {
+	  text-decoration:none;
+	  color:white;
+	  font-size:40px;
+	  text-shadow:0 2px 2px rgba(0,0,0,0.8);
+	  opacity:0.5;
+	  font-weight:200;
+	  &:hover {
+		opacity:1;
+	  }
+	}
+	.target {
+	  position:absolute;
+	  height:100%;
+	  width:100%;
+	  display:flex;
+	  transform:scale(0);
+	  align-items:center;
+	  justify-content:space-between;
+	  *:first-child,*:last-child {
+		flex:0 0 100px;
+		text-align:center;
+		@media all and (max-width:600px){
+		  flex:0 0 50px;
+		}
+	  }
+	  .content {
+		transform:scale(0.9);
+		opacity:0;
+		align-self: center;
+		display: flex; /* Use Flexbox to center the image */
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+		max-height: 100%;
+		max-width: 60%;
+		min-height: 0;
+		min-width: 0;
+		overflow: hidden;
+		box-shadow: 0 0 0 5px white, 0 5px 8px 3px rgba(0, 0, 0, 0.6);
+		transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+		img {
+		  max-width: 100%;
+		  max-height:calc(100vh - 40px);
+		  display:block;
+		  margin:0;
+		}
+	  }
+	  &:target {
+		transform:scale(1);
+		.content {
+		  transform:scale(1);
+		  opacity:1;
+		}
+	  }
+	  .description {
+		text-align: center;
+		p {
+		  color: white;
+		  width: 25vw; /* 25% of the viewport width */
+		  word-wrap: break-word; /* Ensure long words also break onto the next line */
+		  
+		}
+		h2 {
+		  color: white;
+		  margin: 0px;
+		  font-size: 48px;
+		}
+	  }
+	}
+	.close {
+	  position:absolute;
+	  right:10px;
+	  top:10px;
+	  content: "\f00d";
+	} 
+  }
