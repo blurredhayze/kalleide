@@ -1,10 +1,15 @@
 body {
+
+  	
 	margin: 0;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center; /* Center content horizontally */
 	justify-content: flex-start; /* Align content to the top of the body */
+}
+body{
+  background-image: url(../images/moireish.gif);
 }
 
 .photos p {
@@ -26,7 +31,7 @@ body {
 .photos img:hover {
 	transform: scale(2); /* Combine rotation and scale */
 	box-shadow: 3px 4px 10px #0006;
-	z-index: 999;
+	z-index: 1000;
 }
 
 .lightbox {

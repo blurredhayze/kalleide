@@ -21,7 +21,7 @@ body {
   cursor: url(https://cur.cursors-4u.net/cursors/cur-10/cur919.ani), url(https://cur.cursors-4u.net/cursors/cur-10/cur919.gif), auto !important;
 }
 
-#musicPlayer {position: fixed; top: 100px; right: 0cqb}
+#musicPlayer {position: fixed; bottom: 10px; right: 0cqb}
 /* Styles for screens with a max-width of 800px */
 @media only screen and (max-width: 1800px) {
   #musicPlayer {
@@ -205,6 +205,33 @@ from, to { transform: scale(1, 1); }
     margin: 1em 0;
 }
 
+.imgtxt {
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+}
+.imgtxt span {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  font-size: 2.5rem;
+  color: #FFF;
+  filter: drop-shadow(1px 1px 0 black) 
+    drop-shadow(-1px 1px 0 black)
+    drop-shadow(1px -1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+}
+.imgtxt:hover span, .imgtxt:focus span {
+  opacity: 1;
+}
+.imgtxt:hover img, .imgtxt:focus img {
+  /* add hover effects like transform or filter to your images here! */
+}
+	
 .section.text {
     display: inline-block;
 }
